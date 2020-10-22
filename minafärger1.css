@@ -1,0 +1,15 @@
+h1{
+    color: #FFFFFF;
+   } 
+   body{
+       animation: pulse 6s infinite;
+   }
+   
+   @keyframes pulse {
+       0% {
+           background-color: #FFFFFF;
+       }
+       100% {
+           background-color:#FF0000;
+       }
+   }
