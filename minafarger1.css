@@ -1,8 +1,9 @@
-h1{
+   h1, h2{
     color: #FFFFFF;
    } 
    body{
        animation: pulse 6s infinite;
+       max-width: 13cm;
    }
    
    @keyframes pulse {
