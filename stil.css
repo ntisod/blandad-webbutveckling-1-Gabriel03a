@@ -22,7 +22,7 @@
     .col-s-12 {width: 100%;}
   }
 
-@media only screen and (man-width: 768px) {
+@media only screen and (min-width: 768px) {
 /* For desktop */    
 
     .col-1 {width: 8.33%;}
@@ -48,7 +48,7 @@
         clear: both;
         display: table;
     }
-    
+}    
 header{
        background-color: rgb(196, 27, 91);
    } 
@@ -87,5 +87,4 @@ a:hover{
 }
 a:active{
     border-width: 4px;
-}
 }
