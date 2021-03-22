@@ -1,6 +1,17 @@
 * {
     box-sizing: border=box;
 }
+
+body{
+    font-family: Geneva, Verdana, sans-serif;
+    font-size: 1em;
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10vw;
+}
+
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
