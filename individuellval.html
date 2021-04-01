@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Val av blankett</title>
+</head>
+<body>
+    <h1>Individuell Formulär</h1>
+    <button type="button"onclick="alert('Skapad av Amir Al-Suhaili, Gabriel Al-Zuhairi den 2021-03-29')">Upphovsmän</button>
+    <p1>obligatoriskt fält*</p1>
+  
+  
+  <fieldset>
+  
+   <label for="name">First Name:</label>
+          <input type="text" id="name" name="user_name">
+ 
+
+          <label for="name">Last Name:</label>
+          <input type="text" id="name" name="user_name">
+ 
+     
+          <label for="email">Email:</label>
+          <input type="email" id="mail" name="user_email">
+
+  
+  </fieldset>
+  
+  
+    <fieldset>
+  
+   <input type="radio" name="answer" value="Show Div" onclick="showDiv()" />Engineering</label> <br>
+     <input type="radio" name="answer" value="Show Div" onclick="showDiv2()" />Software</label>
+  
+  </fieldset>
+  
+  
+  <div id="Div1"  style="display:none;" class="answer_list" >
+  
+<fieldset>
+
+<label> Välj dina kurser </label>
+
+              <p> Välj det första valet</p>
+              <select id="program" name="program">
+        <option value="0">Välj en av följande</option>
+                <option value="Engelska 7">Engelska 7</option>
+                <option value="Matematik 5">Matematik 5</option>
+                <option value="Webbserverprogrammering 1">Webbserverprogrammering 1</option>
+                <option value="Entreprenörskap1">Entreprenörskap1</option>
+                <option value="Idrott och hälsa 2">Idrott och hälsa 2</option>
+              </select>
+        
+        <p> Välj det andra valet </p>
+        <select id="program" name="program">
+        <option value="0">Välj en av följande</option>
+                <option value="Engelska 7">Engelska 7</option>
+                <option value="Matematik 5">Matematik 5</option>
+                <option value="Webbserverprogrammering 1">Webbserverprogrammering 1</option>
+                <option value="Entreprenörskap1">Entreprenörskap1</option>
+                <option value="Idrott och hälsa 2">Idrott och hälsa 2</option>
+              </select>
+        
+        <p> Välj det tredje valet </p>
+        <select id="program" name="program">
+        <option value="0">Välj en av följande</option>
+                <option value="Engelska 7">Engelska 7</option>
+                <option value="Matematik 5">Matematik 5</option>
+                <option value="Webbserverprogrammering 1">Webbserverprogrammering 1</option>
+                <option value="Entreprenörskap1">Entreprenörskap1</option>
+                <option value="Idrott och hälsa 2">Idrott och hälsa 2</option>
+              </select>
+
+</fieldset>
+  
+  </div>
+  
+  <div id="Div2"  style="display:none;" class="answer_list" >
+  
+  <fieldset>
+  
+  <label> Välj dina kurser </label>
+   
+              <p> Välj det första valet </p>
+              <select id="program" name="program">
+                <option value="Matematik 4">Matematik 4</option>
+                <option value="Fysik 2">Fysik 2</option>
+                <option value="Digitalt skapande 2">Digitalt skapande 2</option>    
+                </select>
+        
+          <p> Välj det andra valet </p>
+              <select id="program" name="program">
+                <option value="Matematik 4">Matematik 4</option>
+                <option value="Fysik 2">Fysik 2</option>
+                <option value="Digitalt skapande 2">Digitalt skapande 2</option>    
+                </select>
+        
+          <p> Välj det tredje valet </p>
+              <select id="program" name="program">
+                <option value="Matematik 4">Matematik 4</option>
+                <option value="Fysik 2">Fysik 2</option>
+                <option value="Digitalt skapande 2">Digitalt skapande 2</option>    
+                </select>
+        
+  </fieldset>
+  </div>
+  
+  <fieldset>
+        <input type="submit">
+    </fieldset>
+        
+  <script src="blanket.js"></script>
+
+</body>
+</html>
