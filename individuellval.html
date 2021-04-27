@@ -1,82 +1,142 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.min.js"></script>
     <title>Val av blankett</title>
 </head>
 <body>
-    <h1>Individuell Formulär</h1>
-    <button type="button" onclick= "alert('Skapad av Amir Al-Suhaili, Gabriel Al-Zuhairi den 2021-03-29')"> Upphovsmän </button>
-    <p>obligatoriskt fält*</p>
   
-  
-  <fieldset>
-  
-          <label for="name">First Name</label>
-          <input type="text" id="name" name="user_name">
+  <h1>
+     Individuell Formulär
+  </h1>
+    <button type = "button" onclick  = "alert('Skapad av Amir Al-Suhaili, den 2021-03-29')">Upphovsmän</button> 
+    
+    
+    <fieldset>
+    
+     <label for="name1">First Name:</label>
+          <input type="text" id="name1" name="user_name">
  
 
-          <label for="fname">Last Name</label>
-          <input type="text" id="fname" name="user_fname">
- 
-     
-          <label for="email">Email</label>
-          <input type="email" id="email" name="user_email">
+          <label for="name2">Last Name:</label>
+          <input type="text" id="name2" name="user_name">
 
-  </fieldset>
-  
-  
-  <fieldset>
-  
-   <input type="radio" name="answer" value="Show Div" onclick="showDiv()" >Engineering
-   <br>
-    <input type="radio" name="answer" value="Show Div" onclick="showDiv2()" >Software
-  
-  </fieldset>
-  
-  
-  <div id="Div1"  style="display:none;" class="answer_list" >
-  
+
+          <label for="mail">Email:</label>
+          <input type="text" id="mail" name="user_email">
+
+    
+    </fieldset>
+    
+    
+    <fieldset>
+    
+     <input type="radio" name="answer" value="Div1" onclick="showDiv()" >Engineering
+    <br>
+   <input type="radio" name="answer" value="Div2" onclick="showDiv2()" >Software
+    
+    </fieldset>
+    
+    
+    <div id="Div1"  style="display:none;" class="answer_list" >
+    
 <fieldset>
 
 <label> Välj dina kurser </label>
 
               <p> Välj det första valet</p>
               <select id="program1" name="program">
-              <option value="0">Välj en av följande</option>
-                <option value="Engelska 7">Engelska 7</option>
-                <option value="Matematik 5">Matematik 5</option>
-                <option value="Webbserverprogrammering 1">Webbserverprogrammering 1</option>
-                <option value="Entreprenörskap1">Entreprenörskap1</option>
-                <option value="Idrott och hälsa 2">Idrott och hälsa 2</option>
+                    <option value="0">Välj en av följande</option>
+                      <option value="1">Engelska 7</option>
+                      <option value="2">Matematik 5</option>
+                      <option value="3">Webbserverprogrammering 1</option>
+                      <option value="4">Entreprenörskap</option>
+                      <option value="5">Idrott och hälsa 2</option>
+                      <option value="6">Digitalt skapande 1</option>
+                      <option value="7">Modersmål</option>
               </select>
+              
+              <p> Välj det andra valet </p>
+              <select id="program2" name="program">
+              <option value="0">Välj en av följande</option>
+                <option value="1">Engelska 7</option>
+                <option value="2">Matematik 5</option>
+                <option value="3">Webbserverprogrammering 1</option>
+                <option value="4">Entreprenörskap</option>
+                <option value="5">Idrott och hälsa 2</option>
+                <option value="6">Digitalt skapande 1</option>
+                <option value="7">Modersmål</option>
+        </select>
+              
+              <p> Välj det tredje valet </p>
+              <select id="program3" name="program">
+              <option value="0">Välj en av följande</option>
+                <option value="1">Engelska 7</option>
+                <option value="2">Matematik 5</option>
+                <option value="3">Webbserverprogrammering 1</option>
+                <option value="4">Entreprenörskap</option>
+                <option value="5">Idrott och hälsa 2</option>
+                <option value="6">Digitalt skapande 1</option>
+                <option value="7">Modersmål</option>
+        </select>
+
 </fieldset>
-  
-  </div>
-  
-  <div id="Div2"  style="display:none;" class="answer_list" >
-  
-<fieldset>
-  
-  <label> Välj dina kurser </label>
-   
-              <p> Välj det första valet </p>
-              <select id="program" name="program">
-                <option value="Matematik 4">Matematik 4</option>
-                <option value="Fysik 2">Fysik 2</option>
-                <option value="Digitalt skapande 2">Digitalt skapande 2</option>    
-                </select>             
-</fieldset>
-  </div>
-  
-  <fieldset>
-        <input type="submit">
-   </fieldset>
-        
-  <script src="blanket.js"></script>
+    
+    </div>
+    
+    <div id="Div2"  style="display:none;" class="answer_list" >
+    
+    <fieldset>
+    
+    <label> Välj dina kurser </label>
+     
+                <p> Välj det första valet </p>
+                <select id="program4" name="program">
+                <option value="0">Välj en av följande</option>
+                <option value="1">Matematik 4</option>
+                <option value="2">Fysik 2</option>
+                <option value="3">Digitalt skapande 2</option>  
+                <option value="4">Engelska 7</option>
+                <option value="5">Idrott och hälsa 2</option> 
+                <option value="6">Entreprenörskap</option>   
+                <option value="7">Modersmål</option> 
+                </select>
+                
+                  <p> Välj det andra valet </p>
+                <select id="program5" name="program">
+                <option value="0">Välj en av följande</option>
+                <option value="1">Matematik 4</option>
+                <option value="2">Fysik 2</option>
+                <option value="3">Digitalt skapande 2</option>  
+                <option value="4">Engelska 7</option>
+                <option value="5">Idrott och hälsa 2</option> 
+                <option value="6">Entreprenörskap</option>   
+                <option value="7">Modersmål</option>  
+                </select>
+                
+                  <p> Välj det tredje valet </p>
+                <select id="program6" name="program">
+                <option value="0">Välj en av följande</option>
+                <option value="1">Matematik 4</option>
+                <option value="2">Fysik 2</option>
+                <option value="3">Digitalt skapande 2</option>  
+                <option value="4">Engelska 7</option>
+                <option value="5">Idrott och hälsa 2</option> 
+                <option value="6">Entreprenörskap</option>   
+                <option value="7">Modersmål</option>   
+                </select>
+                
+    </fieldset>
+    </div>
+    
+    <fieldset>
+              <input type="submit">
+    </fieldset>
+              
+    <script src="blanket.js"></script>
 
 </body>
 </html>
