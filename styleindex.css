@@ -1,6 +1,6 @@
 [class*="col-"] {
     float: left;
-    padding: 50px;
+    padding: 65px;
     border: 10px solid rgb(255, 255, 255);
 }
 .row::after {
