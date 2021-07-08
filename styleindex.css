@@ -1,0 +1,35 @@
+[class*="col-"] {
+    float: left;
+    padding: 65px;
+    border: 10px solid rgb(255, 255, 255);
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+a{
+    color: rgb(247, 245, 245); 
+    background-color: rgb(103, 105, 233);
+    border: 10px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-decoration: none;
+ }
+ a:hover{
+
+    background-color: rgb(85, 85, 85); 
+}
+a:active{
+
+    border-width: 4px;
+}
+img{
+    border: 10px solid snow;
+    border-top-color: snow;
+    border-bottom-color: snow;
+    border-left-color: snow;
+    border-right-color:snow ;   
+}
+
